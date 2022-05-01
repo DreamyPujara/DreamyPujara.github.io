@@ -98,30 +98,52 @@ after confirmimg the account via the email that I had provided , i successfully 
     
 
 ## Download and Run a Simple Application in a Docker Container
-Useing the following tutorial I downloaded and ran a simple app in a Docker container:
 
-Sample Application: https://docs.docker.com/get-started/02_our_app/
+Using the following tutorial I downloaded and ran a simple app in a Docker container: [Sample Application](https://docs.docker.com/get-started/02_our_app/)
+The application was a simple application of _To-Do list_.
 
-I downloaded the zip file of the entire repository from github link provided. After that i extracted the file. 
+I downloaded the zip file of the entire repository from github link provided. After that I extracted the file contents to my system. 
 
-i used Visual Studio Code as an editor to work with the json file. I then created the Dockerfile in the same directory that is "app" where package.json was loacted.
+I used Visual Studio Code as an editor. I then created the Dockerfile in the same directory that is "app" where package.json was loacted , which looked like this:
+
+   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/Dockerfile.png" width="600" height="300" align="center">
+     
 
 I opened the terminal and ran the command :
 
-docker build -t getting-started .
+      `docker build -t getting-started .`
+      
+ These steps were to app's container image.
+ 
+ After that to start an app container, I ran the following command on my terminal : 
+ 
+        `docker run -dp 3000:3000 getting-started`
+        
+  After a few seconds, I opened the web browser to [http://localhost:3000](http://localhost:3000). where I saw the app. The final output looked something like this:
+  
+   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/output_of_task.png" width="600" height="300" align="center">
+   
+   
 
-here i got the error which i trobleshooted.
+### Troubleshooting
+
+while building the app's image container,I faced the following error:
+ 
+   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/error%20while%20create%20an%20image%20of%20container.png" width="600" height="300" align="center">
+   
+ To troubleshoot it, first I rechecked the steps I followed , I checked all the commands again and then I tried reperforming them. I reread the system requirements just to be sure that everything was on point. Then I searched for similar cases on [stakeoverflow](https://stackoverflow.com/questions/64221861/an-error-failed-to-solve-with-frontend-dockerfile-v0) just to find something appropriate. I tried out some of the command changes but nothing seemed to work. Then, I mailed Vinayak Sir about the issue I was facing. I kept on finding the resolution and finally I restarted the terminal to make WSL-2 the default version by using `--set-default-version 2` command. After that i refreshed the Docker Desktop. Following by checking the _Dockerfile_ and then performing entire process afresh. I successfully completed the task after that.
+
+
 
 ## My Experience
-Overall my experience was positive on working with Docker.
 
-the sample application document lacked the troubleshooting section which might make confusion for users to get to complete it. Novice users of docker might face difficulties. 
+Overall my experience was positive on working with Docker.The Documentation Guide was tailored enough with illustrations and Helps which made the entire process very much lucid to perform. Though Unlike Microsoft Manual, Docker Guide had little to no help/Troubleshooting section which can make it a little difficult for novice users.I believe more visuals and probable errors and their solutions can be added from my side to make the entire documentation to help making deploying and maintaining the applications easier. 
 
-
-
-Troubleshooting section can be added.
+Apart from that, I think Docker can be used with many alternatives to deploy applications like, The Docker Azure Integration enables developers to use native Docker commands to run applications in Azure Container Instances (ACI) when building cloud-native applications etc. 
 
 
-than i ran the command on the terminal to start the app container
+## Feedback
+Help me improve this Document by providing your valuable feedback. Suggetions are welcomed to make the document more appropriate to use. Thank you very much. 
 
-i sucessfully completed the task. 
+
+
