@@ -62,10 +62,9 @@ after it was installed, I restarted the system as instructed in the manual and i
 
 >Setting up the system was over and now I went ahead and started the Orientation and Setup section from the link provided.
 
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/orientation%20and%20setup.png" width="600" height="300" align="center">
+   ![ ](images\orientation%20and%20setup.png)
 
-
-
+   
 
 
 ## Getting Familiar with Docker Desktop
@@ -77,29 +76,33 @@ The steps were pretty simple and looked like these:
 
 1. Cloning the repository
 
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/docker_tut_step1_clone.png" width="600" height="300" align="center">
+   ![ ](images\docker_tut_step1_clone.png)
+   
 
 2. To build the image
 
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/docker_tut_step2_build.png" width="600" height="300" align="center">
+  ![ ](images\docker_tut_step2_build.png)
+  
    
 3. Running the First Container
 
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/docker_tut_step3_run.png" width="600" height="300" align="center">
+   ![ ](images\/docker_tut_step3_run.png)
+  
    
 4. Save and Share the Image
   
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/docker_tut_step4_save%26share.png" width="600" height="300" align="center">
+   ![ ](images\docker_tut_step4_save%26share.png)
    
 
 for the last step, I needed to _sign in_ to a docker account. I didn't had one so I went ahead and _signed up_ for one from the [Docker Hub](https://hub.docker.com/).
 
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/docker%20sign%20up.png" width="600" height="300" align="center">
+   ![ ](images\docker%20sign%20up.png)
+   
 
 after confirmimg the account via the email that I had provided , i successfully completed the tutorial. Which looked like this: 
 
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/docker_tut_successful.png" width="600" height="300" align="center">
-    
+   ![ ](images\docker_tut_successful.png)
+   
 
 ## Download and Run a Simple Application in a Docker Container
 
@@ -111,7 +114,7 @@ I downloaded the zip file of the entire repository from github link provided. Af
 
 I used Visual Studio Code as an editor. I then created the Dockerfile in the same directory that is "app" where package.json was loacted , which looked like this:
 
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/Dockerfile.png" width="600" height="300" align="center">
+   ![ ](images\Dockerfile.png)
      
 
 I opened the terminal and ran the command :
@@ -126,10 +129,10 @@ I opened the terminal and ran the command :
         
   After a few seconds, I opened the web browser to [http://localhost:3000](http://localhost:3000). where I saw the app. The final output looked something like this:
   
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/output_of_task.png" width="600" height="300" align="center">
+   ![ ](images\output_of_task.png)
    
-  
-
+   
+ 
 
 ## My Experience
 
@@ -137,7 +140,8 @@ I opened the terminal and ran the command :
 
 while building the app's image container,I faced the following error:
  
-   <img src="https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/error%20while%20create%20an%20image%20of%20container.png" width="600" height="300" align="center">
+  ![ ](images\error%20while%20create%20an%20image%20of%20container.png)
+  
    
  To troubleshoot it, first I rechecked the steps I followed , I checked all the commands again and then I tried reperforming them. I reread the system requirements just to be sure that everything was on point. Then I searched for similar cases on [stakeoverflow](https://stackoverflow.com/questions/64221861/an-error-failed-to-solve-with-frontend-dockerfile-v0) just to find something appropriate. I tried out some of the command changes but nothing seemed to work. I kept on finding the resolution and finally I restarted the terminal to make WSL-2 the default version by using `--set-default-version 2` command. After that i refreshed the Docker Desktop. Following by checking the _Dockerfile_ and then performing entire process afresh. I successfully completed the task after that.
 
