@@ -4,7 +4,7 @@
 I used this Link [Docs.Docker](https://docs.docker.com/desktop/windows/install/) for downloading the Docker Installer suitable for my Windows 10 system. 
 as shown in the picture, just by clicking the "Docker desktop for windows", it will start to download the _.exe_ file.
 
-   ![image]("https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/installing%20docker%20desktop.png" =600X300)
+   ![image]("https://github.com/DreamyPujara/Oracle-Excersie-UAD/blob/main/images/installing%20docker%20desktop.png")
    
 
 as the executable file is around 500MB, it took a while to get downloaded. Meanwhile, to fulfill the system requirements, I downloaded and installed [linux kernal update package](https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) from the docker install documentation.
